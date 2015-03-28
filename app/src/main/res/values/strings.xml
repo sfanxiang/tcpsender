@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">TCP Sender</string>
+
+    <string name="title_section1">Send</string>
+    <string name="title_section2">Log</string>
+    <string name="title_section3">Section 3</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_save">Save</string>
+
+    <string name="action_about">About</string>
+    <string name="about_string" translatable="false">sfanxiang.github.io</string>
+
+    <string name="string_name">Name:</string>
+    <string name="string_host">Host:</string>
+    <string name="string_connect">Connect</string>
+    <string name="string_send">Send</string>
+</resources>
