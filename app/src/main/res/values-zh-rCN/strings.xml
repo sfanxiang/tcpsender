@@ -8,11 +8,27 @@
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
+    <string name="action_load">读取</string>
     <string name="action_save">保存</string>
+    <string name="action_delete">删除</string>
+
+    <string name="action_copy">复制</string>
+    <string name="action_clear">清除</string>
+
     <string name="action_about">关于</string>
+
+    <string name="string_connected">已连接</string>
+    <string name="string_connect_fail">连接失败</string>
+    <string name="string_sent">消息已发送</string>
 
     <string name="string_name">名称：</string>
     <string name="string_host">主机：</string>
+    <string name="string_message">消息</string>
     <string name="string_connect">连接</string>
+    <string name="string_connecting">正在连接</string>
+    <string name="string_disconnect">断开连接</string>
+    <string name="string_disconnecting">正在断开连接</string>
     <string name="string_send">发送</string>
+    <string name="string_sending">正在发送</string>
+    <string name="string_copied">已复制到剪贴板</string>
 </resources>
