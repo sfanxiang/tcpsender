@@ -209,6 +209,10 @@ public class MainActivity extends Activity
             Message msg = SendFragment.handler.obtainMessage();
             msg.what = SendFragment.Messages.ACTION_DELETE.ordinal();
             msg.sendToTarget();
+        } else if (id == R.id.action_reset) {
+            Message msg = SendFragment.handler.obtainMessage();
+            msg.what = SendFragment.Messages.ACTION_RESET.ordinal();
+            msg.sendToTarget();
         } else if (id == R.id.action_copy) {
             Message msg = LogFragment.handler.obtainMessage();
             msg.what = LogFragment.Messages.ACTION_COPY.ordinal();
@@ -306,6 +310,15 @@ public class MainActivity extends Activity
                     editor.remove("message_" + curName);
                     editor.remove("newline_" + curName);
                     editor.commit();
+                } else if (msg.what == Messages.ACTION_RESET.ordinal()) {
+                    EditText editText = (EditText) rootView.findViewById(R.id.editText_Name);
+                    editText.setText("");
+                    editText = (EditText) rootView.findViewById(R.id.editText_Host);
+                    editText.setText("");
+                    editText = (EditText) rootView.findViewById(R.id.editText_Message);
+                    editText.setText("");
+                    Spinner spinner = (Spinner) rootView.findViewById(R.id.spinner_Newline);
+                    spinner.setSelection(0);
                 }
             }
         };
@@ -541,6 +554,7 @@ public class MainActivity extends Activity
             ACTION_LOAD,
             ACTION_SAVE,
             ACTION_DELETE,
+            ACTION_RESET,
         }
     }
 
